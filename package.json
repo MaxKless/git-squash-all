@@ -1,7 +1,11 @@
 {
   "name": "git-squash-all",
   "displayName": "git-squash-all",
-  "description": "Select every commit except for the last one to squash!",
+  "description": "quickly squash all commits during an interactive rebase",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MaxKless/git-squash-all.git"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.65.0"
