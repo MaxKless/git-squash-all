@@ -10,6 +10,8 @@ Squashing your commits is a great feature but manually replacing every "pick" st
 
 Instantly select _squash_ for every commit in your `git-rebase-todo` (except the first)!
 
+![Usage Example](./resources/example-usage.gif)
+
 ## Features
 
 Run `Git Squash All` while doing an interactive rebase and automatically squash all commits. That's it.
