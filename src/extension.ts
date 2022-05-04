@@ -17,6 +17,15 @@ export function activate(context: vscode.ExtensionContext) {
         ".git/rebase-merge/git-rebase-todo"
       );
 
+      try {
+        await vscode.workspace.fs.stat(gitRebaseTodoUri);
+      } catch (e) {
+        vscode.window.showErrorMessage(
+          "git-rebase-todo file not found. Are you sure there's a rebase going on right now?"
+        );
+        return;
+      }
+
       // read git-rebase-todo file
       const gitRebaseTodoDocument = await vscode.workspace.openTextDocument(
         gitRebaseTodoUri
